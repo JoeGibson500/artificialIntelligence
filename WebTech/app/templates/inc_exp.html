@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   </head>
+   <body>
+    <h2>{{ title }}</h2>
+    <div class="input_content">
+
+      
+      <form action="" method="post" name="displayIncExp">
+         {{ form.hidden_tag() }}
+         <label for="Amount"><p>Amount</p></label>
+         <p>
+            {{ form.amount }}<br>
+            {% for error in form.amount.errors %}
+            [{{ error }}]
+            {% endfor %}
+         </p>
+         <br>
+         <label for="Description"><p>Description</p></label>
+         <p>
+            {{ form.desc }}<br>
+            {% for error in form.desc.errors %}
+            [{{ error }}]
+            {% endfor %}
+         </p>
+         <p><input type="submit" value="Enter"></p>
+    </div>
+      </form>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul>
+         {% for message in messages %}
+         <div class= "message"> <li>{{ message }} </li></div>
+         {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+
+   </body>
+</html>
+{% endblock %}

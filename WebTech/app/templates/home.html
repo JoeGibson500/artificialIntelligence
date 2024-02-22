@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if goal %}
+<h2>Balance: £{{ balance }} | Current Goal: £{{ goal }}</h2>
+    {% if goal > balance %}
+    <h3>You are £{{ -savings }} away from your Goal</h3>
+    <h3>You have {{ percent }}% of your desired Goal</h3>
+    {% elif balance >= goal %}
+    <h3>Congratulations, you have surpassed your spending Goal!</h3>
+    <h3>You have a surplus of £{{ savings }}</h3>
+    {% endif %}
+{% else %}
+<h2>Balance: £{{ balance }} | No Current Goal</h2>
+<h3>Create a goal in 'Set up spending Goal' to view analytics</h3>
+{% endif %}
+<div class="incomestat">
+    <img src="https://static.thenounproject.com/png/4111439-200.png" alt="Icon showing a hand holding money">
+    <h2>Total Income: £{{ tot_income }}</h2>
+</div>
+<div class="expenditurestat">
+    <img src="https://static.thenounproject.com/png/2764040-200.png" alt="Icon with a coin leaving a hand">
+    <h2>Total Expenditure: £{{ tot_expenditure }}</h2>
+</div>
+
+{% endblock %}

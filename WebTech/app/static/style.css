@@ -1,0 +1,143 @@
+
+.login form {
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 24px;
+}
+
+.login input[type="submit"] {
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+.login select {
+    font-size: 24px;
+    padding: 10px;
+    width: 100px;
+}
+
+.incomestat {
+    float: left;
+    padding-left: 15vw;
+}
+
+.expenditurestat {
+    float: right;
+    padding-right: 15vw;
+}
+
+body .message {
+    display: flex;
+    color: rgb(186, 11, 11);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.IncExpDiv {
+    float: left;
+    width: 50%;
+}
+
+.IncExpDiv .content{
+    width: 100%;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px #888888;
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.IncExpDiv .content input{
+    color: white;
+    background: rgb(186, 11, 11);
+    margin-left: 5px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: bold;
+}
+
+.input_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.input_content p{
+    margin: 0;
+    padding: 3px;
+}
+
+.input_content input{
+    font-size: 20px;
+}
+
+.input_content textarea{
+    font-size: 20px;
+}
+
+h1 {
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set the desired height */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+body {
+    text-decoration: bold;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul#menu li {
+    float: left;
+}
+ul#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul#menu li a:hover {
+    background-color: #111;
+}
+.navbar {
+    background-color: #f8f9fa;
+}
+.navbar a {
+    color: black;
+}
+.navbar a:hover {
+    color: red;
+}

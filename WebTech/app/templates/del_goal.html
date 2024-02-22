@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   </head>
+   <body>
+    
+    <h2>Delete Current Goal</h2>
+    {% if goal %}
+        <h3>Current Goal: £{{ goal }}</h3>
+    {% else %}
+        <h3>No Current Goal</h3>
+    {% endif %}
+    <div class="input_content">
+        <form action="" method="post" name="displayDelGoal">
+    
+        <p><input type="submit" name="delete"></p>
+                
+        </form>
+    </div>
+    </body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="static/style.css">
+      {% if title %}
+      <title>{{ title }}</title>
+      {% else %}
+      <title> No title specified</title>
+      {% endif %}
+  </head>
+  <body>
+    <ul id="menu">
+      <li class="nav-item"><a class="nav-link" href="/">Switch User </a></li>
+      <li class="nav-item"><a class="nav-link" href="/home">Home </a></li>
+      <li class="nav-item"><a class="nav-link" href="/insights">Insights</a></li>
+      <li class="nav-item"><a class="nav-link" href="/income">Add Income </a></li>
+      <li class="nav-item"><a class="nav-link" href="/expenditure">Add Expenditure </a></li>
+      <li class="nav-item"><a class="nav-link" href="/setgoal">Set up spending Goal</a></li>
+      <li class="nav-item"><a class="nav-link" href="/delgoal">Remove spending Goal</a></li>
+    </ul>
+    <h1>Welcome Back ID: {{ name }}</h1>
+  </body>
+
+  <div>
+    {% block content %}{% endblock %}
+  </div>
+
+</html>

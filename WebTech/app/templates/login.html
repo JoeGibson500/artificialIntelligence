@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <title>User ID Selection</title>
+</head>
+<body>
+    <div class="login">
+        <form action="" method="post" name="login">
+            {{ form.hidden_tag() }}
+            <p>Account ID: {{ form.id }}<br>
+            {% for error in form.id.errors %}
+                [{{ error }}]
+            {% endfor %}
+            </p>
+
+            <p><input type="submit" value="Enter"></p>
+        </form>
+    </div>
+</body>
+</html>
